@@ -25,23 +25,23 @@ men sunglasses
 By Default Only 6 pages will be scraped
 
 ### Output
-*********** Page 1 ***********************
+ Page 1 
 Products Scraped:  43
 Products Rejected:  5
 
-*********** Page 2 ***********************
+ Page 2 
 Products Scraped:  43
 Products Rejected:  5
 
-*********** Page 3 ***********************
+Page 3 
 Products Scraped:  40
 Products Rejected:  8
 
-*********** Page 4 ***********************
+Page 4
 Products Scraped:  45
 Products Rejected:  3
 
-*********** Page 5 ***********************
+Page 5 
 Products Scraped:  41
 Products Rejected:  7
 
