@@ -3,9 +3,8 @@ from bs4 import BeautifulSoup as soup
 from selenium import webdriver
 import json as JSON
 
-
+pages = 6
 BASE_URL = 'https://www.amazon.com/s?k='
-# https://www.amazon.com/s?k=black+shoes
 
 while(True):
 	print("Enter the product  to be Scraped")
@@ -16,7 +15,7 @@ while(True):
 		print("Please Try Again!!")
 		print()
 
-# product_name = 'black shoes'
+
 
 
 option = webdriver.ChromeOptions()
@@ -27,21 +26,14 @@ option.add_argument("user-agent= 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Appl
 
 driver = webdriver.Chrome(executable_path='chromedriver', chrome_options=option)        
 
-# driver.implicitly_wait(50)
 
-# driver.get(BASE_URL)
-
-
-
-
-# req = requests.get(BASE_URL,headers=headers)
 product_json = []
 
 missing_values = 0
 
 
 
-for page in range(1,5):
+for page in range(1,pages):
 
 	driver.get(BASE_URL+'+'.join(product_name.split())+f"&page={page}")
 
@@ -69,7 +61,6 @@ for page in range(1,5):
 
 
 		except:
-			# print("Missing values")
 			missing_values += 1
 			rejected_per_page += 1
 
@@ -88,9 +79,7 @@ with open(f"{product_name}.json", 'w', encoding='utf-8', errors='ignore') as f:
 
 
 
-	# print(image['alt'],image["src"])
 
-# print(product_json)
 
 print()
 
