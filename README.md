@@ -12,11 +12,6 @@ This script scrapes product from "Amazon.com" website
 
 
 
-## Running the Script
-```
-python main.py
-```
-
 
 ### Example
 
@@ -49,6 +44,10 @@ Products Rejected:  3
 *********** Page 5 ***********************
 Products Scraped:  41
 Products Rejected:  7
+
+
+Total Products Scraped  213
+Total Products Rejected  27
 
 
 
