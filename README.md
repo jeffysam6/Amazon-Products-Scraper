@@ -50,7 +50,7 @@ Total Products Scraped  213
 Total Products Rejected  27
 
 
-
+#### A Json File Will be generated at the end of the script 
 
 
 
